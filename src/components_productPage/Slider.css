@@ -1,0 +1,15 @@
+/* .App {
+    font-family: sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    top:4000px;
+  } */
+  .Slider{
+    position: absolute;
+width: 80%;
+height: 252px;
+left: 110px;
+top: 3059px;
+  }

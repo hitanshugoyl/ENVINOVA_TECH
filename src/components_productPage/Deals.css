@@ -1,0 +1,246 @@
+/* 
+.Deals h1{
+   
+  position: absolute;
+height: 59px;
+left: 500px;
+top: 2065px;
+
+font-family: Montserrat;
+font-style: normal;
+font-weight: bold;
+font-size: 48px;
+line-height: 59px;
+
+
+color: #F5A9A9;
+
+
+color: #F5A9A9;
+
+}
+.Deals h2{
+   
+    
+    position: absolute;
+    width: 345px;
+    height: 45px;
+    left: 568px;
+    top: 2124px;
+    
+    font-family: Ibarra Real Nova;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 45px;
+    
+    
+    color: #C4C4C4;
+
+}
+.Deals .pic{
+    left:0;
+    position: absolute;
+}
+.Deals .pic .pic1{
+    position: absolute;
+width: 193px;
+height: 252px;
+left: 177px;
+top: 2233px;
+
+background: #C4C4C4;
+
+}
+.Deals .pic .pic2{
+    position: absolute;
+width: 193px;
+height: 252px;
+left: 557px;
+top: 2233px;
+
+background: #C4C4C4;
+}
+.Deals .pic p{
+    position: absolute;
+width: 28px;
+height: 59px;
+left: 447px;
+top: 2336px;
+
+font-family: Montserrat;
+font-style: normal;
+font-weight: normal;
+font-size: 48px;
+line-height: 59px;
+
+
+color: #000000;
+
+}
+.Deals .pic .discount h1#together{
+    
+    position: absolute;
+ width: 500px; 
+height: 53px;
+left: 937px;
+top: 2244px;
+
+font-family: Oswald;
+font-style: normal;
+font-weight: bold;
+font-size: 36px;
+
+color: #4F4F4F;
+}
+.Deals .discount h2{
+    
+position: absolute;
+width: 112px;
+height: 39px;
+left: 937px;
+top: 2301px;
+
+font-family: Ibarra Real Nova;
+font-style: normal;
+font-weight: bold;
+font-size: 36px;
+line-height: 45px;
+
+color: #FFBF87;
+}
+.Deals .discount p{
+    position: absolute;
+width: 111px;
+height: 39px;
+left: 1083px;
+top: 2301px;
+
+font-family: Ibarra Real Nova;
+font-style: normal;
+font-weight: bold;
+font-size: 36px;
+line-height: 45px;
+
+color: #000000;
+}
+.Deals .discount .line{
+    position: absolute;
+width: 146px;
+height: 0px;
+left: 1066px;
+top: 2361px;
+
+border: 1px solid #000000;
+transform: matrix(1, 0.01, -0.01, 1, 0, 0);
+}
+.Deals .discount h4{
+    position: absolute;
+width: 123px;
+height: 38px;
+left: 1229px;
+top: 2303px;
+
+font-family: Ibarra Real Nova;
+font-style: normal;
+font-weight: bold;
+font-size: 30px;
+line-height: 37px;
+
+
+color: #828282;
+}
+.Deals .discount .cart{
+    position: absolute;
+width: 297px;
+height: 70px;
+left: 937px;
+top: 2395px;
+
+background: #FFBF87;
+font-family: Montserrat;
+font-style: normal;
+font-weight: normal;
+font-size: 24px;
+line-height: 29px;
+}
+.Deals .discount .cart p#bag{
+    position: absolute;
+width: 148px;
+height: 30px;
+left: 1020px;
+top: 2415px;
+
+font-family: Montserrat;
+font-style: normal;
+font-weight: normal;
+font-size: 24px;
+line-height: 29px;
+
+
+color: #000000;
+}
+.Deals .pic h3#one{
+    position: absolute;
+width: 233px;
+height: 22px;
+left: 157px;
+top: 2502px;
+
+font-family: Montserrat;
+font-style: normal;
+font-weight: normal;
+font-size: 18px;
+line-height: 22px;
+
+
+color: #000000;
+}
+.Deals .pic h3#two{
+    position: absolute;
+width: 233px;
+height: 22px;
+left: 537px;
+top: 2502px;
+
+font-family: Montserrat;
+font-style: normal;
+font-weight: normal;
+font-size: 18px;
+line-height: 22px;
+
+
+color: #000000;
+}
+.Deals .pic h3#priceone{
+    position: absolute;
+    width: 61px;
+    height: 22px;
+    left: 243px;
+    top: 2524px;
+    
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 22px;
+    
+    
+    color: #F5A9A9;
+}
+.Deals .pic h3#pricetwo{
+    position: absolute;
+width: 61px;
+height: 22px;
+left: 623px;
+top: 2524px;
+
+font-family: Montserrat;
+font-style: normal;
+font-weight: normal;
+font-size: 18px;
+line-height: 22px;
+
+
+color: #F5A9A9;
+} */

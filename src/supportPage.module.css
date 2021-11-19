@@ -1,0 +1,102 @@
+html { font-size:100%; } 
+@media (min-width: 640px) { .actions button {font-size:1rem;} } 
+@media (min-width:960px) { .actions button {font-size:1.2rem;} } 
+@media (min-width:1100px) { .actions button {font-size:1.5rem;} } 
+.form {
+    margin-left: 442px;
+    margin-top: 75px;
+    height: 30rem;
+    /* overflow: auto; */
+  }
+  
+  .control {
+    margin-bottom: 0.5rem;
+  }
+  
+  .control label {
+    font-weight: bold;
+    margin-bottom: 0.25rem;
+    display: block;
+  }
+  
+  .control input {
+    font: inherit;
+    border-bottom: 2px solid #35723A;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-radius: 2px;
+    width: 25rem;
+    max-width: 100%;
+    margin-bottom: 20px;
+  }
+  .control ::placeholder{
+      color: #c4c4c4;
+      font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      font-size: 20px;
+  }
+  
+  
+  .actions button {
+    font: inherit;
+    color: #F5A9A9;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    border-radius: 25px;
+    padding: 0.5rem 2rem; 
+    margin-left: 120px;  
+    margin-top: 70px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      /* font-size: 1.5rem; */
+
+  }
+  
+  .actions button:hover,
+  .actions button:active {
+    background-color: #ffe6dc;
+  }
+  
+  .actions .submit {
+    border: 1px solid #F5A9A9;
+    background-color: #F5A9A9;
+    color: white;
+  
+  }
+  
+  .actions .submit:hover,
+  .actions .submit:active {
+    background-color: #eb9595;
+  }
+  
+  .invalid label {
+    color: #ca3e51;
+  }
+  
+  .invalid input {
+    border-color: #aa0b20;
+    background-color: #ffeff1;
+  }
+
+  .submit{
+    font: inherit;
+    color: #000000;
+    cursor: pointer;
+    background-color: #FFBF87;
+    border: 1px solid #FFBF87;
+    border-radius: 20px;
+    padding: 0.5rem 2rem; 
+    margin-left: 550px;
+    margin-top: 100px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+      font-size: 20px;
+  }
+
+  @media (min-width: 640px) { .actions button {font-size:1rem;} } 
+  @media (min-width:960px) { .actions button {font-size:1.2rem;} } 
+  @media (min-width:1100px) { .actions button {font-size:1.5rem;} } 
+
+
+  @media (min-width: 640px) { .submit {font-size:1rem;} } 
+@media (min-width:960px) { .submit {font-size:1.2rem;} } 
+@media (min-width:1100px) { .submit {font-size:1.5rem;} } 

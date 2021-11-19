@@ -1,0 +1,55 @@
+.AboutUs{
+    text-align: center;
+
+}
+.AboutUs h1{
+    color: #F5A9A9;
+    font-family: Montserrat;
+font-style: normal;
+font-weight: bold;
+font-size: 64px;
+line-height: 78px;
+
+}
+.AboutUs h1#com{
+    top:1100px;
+    
+    text-align: center;
+}
+.AboutUs p{
+    font-family: Ibarra Real Nova;
+font-style: normal;
+font-weight: normal;
+font-size: 26px;
+line-height: 45px;
+margin: 50px;
+}
+.AboutUs h1#women{
+    font-family: Montserrat;
+font-style: normal;
+font-weight: bold;
+font-size: 64px;
+line-height: 78px;
+/* identical to box height */
+
+
+color: #F5A9A9;
+}
+.AboutUs h2#hygiene{
+    font-family: Oswald;
+font-style: normal;
+font-weight: bold;
+font-size: 36px;
+line-height: 53px;
+
+color: #000000;
+
+}
+@media (max-width:560px){
+    .AboutUs h1{
+        font-size: 44px;
+    }
+    .AboutUs p{
+        font-size: 16px;
+    }
+}

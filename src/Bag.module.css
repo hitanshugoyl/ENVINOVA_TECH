@@ -1,0 +1,136 @@
+.all h1{
+    text-align: center;
+}
+
+.all .container{
+ display : flex;
+
+ 
+}
+.all .container p{
+    font-family: Oswald;
+font-style: normal;
+font-weight: normal;
+font-size: 30px;
+line-height: 44px;
+text-align: center;
+
+}
+
+.all .container2{
+/* display:flex;
+flex-direction: row;
+justify-content: space-evenly ;
+gap: 10px;
+row-gap: 1px; */
+display: flex;
+  
+  /* gap: 10px;
+  gap: 10px 20px; /* row-gap column gap */
+ /* row-gap: 20px; */
+  column-gap: 50px;
+}
+.all .container2 p{
+    font-family: Oswald;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 36px;
+    /* identical to box height */
+    margin-left: 230px;
+    
+    color: #000000;
+    }
+    .all .container2 .quantity{
+        margin-left: 550px;
+    }
+
+    /* .all .conatiner2 button{
+        background: #FFFFFF;
+border: 2px solid #C4C4C4;
+box-sizing: border-box;
+    } */
+.all .total{
+    display:flex;
+    flex-direction: column;
+    /* margin-top: 100px; 
+    top:800px; */
+}
+    .all .total h1{
+        position: absolute;
+/* width: 133px; */
+height: 44px;
+left: 997px;
+top: 577px;
+
+font-family: Montserrat;
+font-style: normal;
+font-weight: bold;
+font-size: 36px;
+line-height: 44px;
+/* identical to box height */
+
+display: flex;
+align-items: center;
+text-align: center;
+
+color: #000000;
+    }
+
+    .all .total p{
+        position: absolute;
+/* width: 228px; */
+height: 23px;
+left: 1002px;
+top: 623px;
+        font-family: Ibarra Real Nova;
+font-style: normal;
+font-weight: normal;
+font-size: 18px;
+line-height: 22px;
+/* identical to box height */
+
+text-align: center;
+
+color: #828282;
+
+    }
+
+    .checkout button{
+        position: absolute;
+width: 349px;
+height: 70px;
+left: 959px;
+top: 692px;
+font-size: large;
+font-family: Oswald;
+font-style: normal;
+font-weight: normal;
+font-size: 36px;
+line-height: 53px;
+text-align: center;
+
+color: #000000;
+background: #9FC8A8;
+border-radius: 20px;
+    }
+
+    .all .total h6{
+        position: absolute;
+width: 296px;
+height: 23px;
+left: 986px;
+top: 770px;
+
+font-family: Ibarra Real Nova;
+font-style: normal;
+font-weight: bold;
+font-size: 18px;
+line-height: 22px;
+/* identical to box height */
+
+text-align: center;
+
+color: #000000;
+
+    }

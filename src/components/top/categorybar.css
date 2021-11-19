@@ -1,0 +1,23 @@
+
+@media (max-width:940px)
+{
+     #bar{
+         /* visibility: hidden;
+         opacity:0; */
+        margin-right:0.2rem;
+
+
+     }
+     /* .all .menu .response{
+          width:100% !important;
+          position:relative;
+          height:80vh!important;
+
+     }
+
+    .menu .response .bar Tabs{
+opacity: 1;
+visibility: visible;
+    } */
+    
+}

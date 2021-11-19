@@ -1,0 +1,75 @@
+.Quote{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Quote p{
+    /* position: absolute; */
+/* width: 1016px; */
+width:70%;
+/* height: 120px; */
+height:auto;
+/* left: 180px; */
+/* top: 1294px; */
+
+font-family: Ibarra Real Nova;
+font-style: normal;
+font-weight: bold;
+font-size: 48px;
+line-height: 60px;
+text-align: center;
+
+color: #9FC8A8;
+}
+.Quote h1{
+    /* position: absolute; */
+width: 230px;
+height: 78px;
+ /* left: 650px; 
+top: 1450px; */
+
+font-family: Montserrat;
+font-style: normal;
+font-weight: bold;
+font-size: 64px;
+line-height: 78px;
+/* identical to box height */
+
+
+color: #FFBF87;
+}
+.Quote h3{
+    /* position: absolute; */
+/* width: 1140px; */
+width:70%;
+/* max-width: 80%; */
+/* height: 135px; */
+height:auto;
+ /* left: 150px; 
+
+top: 1541px; */
+
+font-family: Ibarra Real Nova;
+font-style: normal;
+font-weight: normal;
+font-size: 30px;
+line-height: 45px;
+/* text-align: center; */
+
+color: #000000;
+}
+
+@media (max-width:560px) {
+    .Quote p{
+        font-size: 28px;
+    }
+    .Quote h1{
+        font-size: 44px;
+    }
+    .Quote h3{
+        font-size: 20px;
+    }
+    
+}

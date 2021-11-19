@@ -1,0 +1,36 @@
+.h1menu{
+    font-family: Oswald;
+font-size: 36px;
+font-style: normal;
+font-weight: 400;
+line-height: 53px;
+letter-spacing: 0em;
+text-align: left;
+color:#000000;
+width:300px;
+
+}
+
+.h1menu :hover{
+   /*  height: 81px; */
+    cursor:pointer;
+/* width: 380px; */
+border-radius: 0px;
+background-color:  #F5A9A940;
+}
+.btnmenu{
+    margin-top: 40rem;
+    position: absolute;
+    width: 149px;
+    height: 71px;
+    left: 31px;
+    top: 946px;
+    
+    font-family: Oswald;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 48px;
+    line-height: 71px;
+    
+    color: #F5A9A9;
+}

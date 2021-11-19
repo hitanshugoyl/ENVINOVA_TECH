@@ -1,0 +1,26 @@
+ 
+ @media (max-width:560px)
+{
+  .mobile h1{
+     font-size: 56px;
+  }
+
+.h2s{
+    fontWeight:700;
+    color: #000000;
+    fontFamily: "Ibarra Real Nova";
+    lineHeight:38px;
+    width:590px;
+}
+.ps{
+    fontWeight:400;
+    color: #000000;
+    fontFamily: "Ibarra Real Nova";
+    lineHeight:38px;
+    width:590px;
+}
+.text{
+    margin-top: 150px;
+
+} 
+}

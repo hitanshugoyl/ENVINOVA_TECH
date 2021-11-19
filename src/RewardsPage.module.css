@@ -1,0 +1,115 @@
+.img1{
+    width:400px;
+    height:118px;
+    margin-top: 182px;
+    margin-left: 493px;
+}
+.img2 {
+    width:948px;
+    height:125px;
+    padding-top: 20px;
+    margin-left: 209px;
+}
+.img3 {
+    width:545px;
+    height:560px;
+    padding-top: 20px;
+    margin-left: 411px;
+}
+.text1{
+color:#c577a1;
+font-family: 'Rufina';
+font-weight: 700;
+font-size: 30px;
+}
+.h2{
+    width:600px;
+    height:45px;
+    padding-top: 20px;
+    margin-left: 375px;
+    font-family: 'Ibarra Real Nova'; 
+    line-height: 38px;
+    font-weight: 300;
+    font-size: 20px;
+    text-align: center;
+
+}
+.h2lilac{
+    width:1280px;
+    height:98px;
+    padding-top: 20px;
+    margin-left: 43px;
+    font-family: 'Oswald'; 
+    line-height: 125px;
+    font-weight: 400;
+    font-size: 84px;
+    text-align: center;
+    color:#BC8AB3;
+    padding-top: 64px;
+
+}
+.img4 {
+    width:800px;
+    height:400px;
+    margin-top: 240px;
+    margin-left: 283px;
+}
+.h2steps{
+    width:1280px;
+    height:100px;
+    margin-top: 100px;
+    margin-left: 57px;
+    font-family: 'Oswald'; 
+    line-height: 125px;
+    font-weight: 400;
+    font-size: 84px;
+    text-align: center;
+    color:#BC8AB3;
+    padding-top: 64px;
+
+}
+.card{
+    border:none;
+}
+.savings{
+    width:620px;
+    height:136px;
+    padding-top: 20px;
+    margin-left: 450px;
+    font-family: 'Ibarra Real Nova'; 
+    line-height: 80px;
+    font-weight: 400;
+    font-size: 64px;
+    text-align: center;
+    color: #828282;
+    ;
+    padding-top: 64px;
+}
+.spansavings{
+    font-weight: 200;
+    font-size: 36px;
+    line-height: 45px;
+    text-align: center;
+
+}
+.img5{
+    width:1440px;
+    height:837px;
+    margin-top: 100px;
+   
+}
+.h2p{
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 45px;
+    text-align: center;
+    font-family: 'Ibarra Real Nova';
+    color: #828282;
+    margin-top: 350px;
+
+}
+.img6{
+    width:569px;
+    height:971px;
+    
+}
