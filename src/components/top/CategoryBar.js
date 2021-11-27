@@ -80,12 +80,12 @@ export default function CategoryBar() {
         centered
       >
       
-        <Tab label="Shop All Categories" value="1"/>
-        <Tab label="Bags" />
-        <Tab label="Decor" />
-        <Tab label="Essentials" />
-        <Tab label="Kitchen" />
-        <Tab label="Stationary" />
+        <Tab label="Shop All Categories" value="1" href="/categories"/>
+        <Tab label="Bags" href="/bags"/>
+        <Tab label="Decor" href="/decor"/>
+        <Tab label="Essentials" href="/essentials"/>
+        <Tab label="Kitchen" href="/kitchen"/>
+        <Tab label="Stationary" href="stationary"/>
       </Tabs>
       <Popover
        id={id}

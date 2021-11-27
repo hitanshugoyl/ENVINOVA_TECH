@@ -16,8 +16,14 @@ import Category from './components_shop/category';
 import Cart from './components cart/Cart';
 import Wishlist from './components_wishlist/Wishlist';
 import CartExample from './components cart/Cart';
-import Profile from './profile';
 import AboutUs from './About/AboutUs';
+import Profile from './profile';
+import CartProvider from './store/cartProvider';
+import BagsPage from '../src/components/Bags/Bags';
+import Decor from './components/Bags/Decor';
+import Essentials from './components/Bags/Essentials';
+import Kitchen from './components/Bags/Kitchen';
+import Stationary from './components/Bags/Stationary';
 
 function App() {
   return (
@@ -54,11 +60,32 @@ function App() {
           <Route path="/profile" exact>
            <Profile /> 
           </Route>
+          <Route path="/bags" exact>
+           <BagsPage /> 
+          </Route>
+          <Route path="/decor" exact>
+           <Decor /> 
+          </Route>
+          <Route path="/essentials" exact>
+           <Essentials /> 
+          </Route>
+          <Route path="/kitchen" exact>
+           <Kitchen /> 
+          </Route>
+          <Route path="/stationary" exact>
+           <Stationary /> 
+          </Route>
+          <Route path="/productpage/:id" exact>
+           <ProductPage /> 
+          </Route>
           <Route path="/rewards" exact>
            <Rewards /> 
           </Route>
           <Route path="/about" exact>
            <AboutUs /> 
+          </Route>
+          <Route path="/categories" exact>
+           <Category /> 
           </Route>
         </Switch>
       </div>

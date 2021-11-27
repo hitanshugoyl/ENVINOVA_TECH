@@ -9,13 +9,13 @@ import ReactDom from 'react-dom';
 
 import { BsChevronDown } from "react-icons/bs";
 
-import NavBar from '../top/Navbar';
+import NavBar from '../top/Navbar'
 import CategoryBar from '../top/CategoryBar';
 import Footer from '../footer/Footer';
 
 
 
-const Bags = () => {
+const Decor = () => {
 
 
 
@@ -25,10 +25,14 @@ const Bags = () => {
        <NavBar />
       <CategoryBar />
 
+
+
+
+
       <h1 style={{
         fontFamily: 'Montserrat', fontStyle: 'normal', fontWeight: 'bold', fontSize: '96px', lineHeight: '117px', textAlign: 'center',
         color: '#000000'
-      }}> Bags</h1>
+      }}> Decor</h1>
 
 
       <div style={{ display: 'flex', flexDirection: 'row', columnGap: '400px' }}>
@@ -85,4 +89,4 @@ const Bags = () => {
   )
 }
 
-export default Bags;
+export default Decor;

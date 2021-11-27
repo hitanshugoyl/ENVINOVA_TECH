@@ -1,23 +1,41 @@
-import React from 'react';
-
+import {React,useState} from 'react';
+import {useHistory} from 'react-router-dom'
 // import AddButton from 'AddButton';
 import AddtoBag from './AddButton';
-const categoryproducts =()=>
-{
+
+
+const Categoryproducts =()=>
+{ 
+   
+    const history=useHistory();
+    const handleProceed = (val) => {
+     history.push(`/productpage/${val}`);
+     console.log("clicked");
+      };
+  
+    const submitCartHandler=(val)=>{
+        //event.preventDefault();
+           console.log(val.id+" "+val.pname);
+           
+          }
    const Product=[
        {
+           id:1,
            pname:'Product1',
            pprice:79,
        },
        {
+        id:2,
         pname:'Product2',
         pprice:79,
     },
     {
+        id:3,
         pname:'Product3',
         pprice:79,
     },
     {
+        id:4,
         pname:'Product4',
         pprice:79,
     }
@@ -25,12 +43,15 @@ const categoryproducts =()=>
 
     return (
         <div>
+               
+          
+      
          <button style={{background:'transparent',border:'none'}}>  <img style={{width: '1275px',height: '483px',background: '#C4C4C4'}}></img></button>
             <div style={{display:'flex' ,columnGap:'150px'}}>
-                <img alt ='pic' style={{marginLeft:'50px',marginTop:'50px', width: '240px',height: '289px',background:'White',border: '2px solid #F5A9A9',boxSizing: 'border-box',borderRadius: '10px'}}></img>
-                <img alt ='pic' style={{width: '240px',marginTop:'50px',height: '289px', background:'white',border: '2px solid #F5A9A9',boxSizing: 'border-box',borderRadius: '10px'}}></img>
-                <img alt ='pic' style={{width: '240px',marginTop:'50px',height: '289px', background:'white',border: '2px solid #F5A9A9',boxSizing: 'border-box',borderRadius: '10px'}}></img>
-                <img alt ='pic' style={{width: '240px',marginTop:'50px',height: '289px', background:'white',border: '2px solid #F5A9A9',boxSizing: 'border-box',borderRadius: '10px'}}></img>
+                <img alt ='pic'  onClick={()=>{handleProceed(Product[0].id)}} style={{marginLeft:'50px',marginTop:'50px', width: '240px',height: '289px',background:'White',border: '2px solid #F5A9A9',boxSizing: 'border-box',borderRadius: '10px'}}></img>
+                <img alt ='pic' onClick={()=>{handleProceed(Product[1].id)}} style={{width: '240px',marginTop:'50px',height: '289px', background:'white',border: '2px solid #F5A9A9',boxSizing: 'border-box',borderRadius: '10px'}}></img>
+                <img alt ='pic' onClick={()=>{handleProceed(Product[2].id)}} style={{width: '240px',marginTop:'50px',height: '289px', background:'white',border: '2px solid #F5A9A9',boxSizing: 'border-box',borderRadius: '10px'}}></img>
+                <img alt ='pic' onClick={()=>{handleProceed(Product[3].id)}} style={{width: '240px',marginTop:'50px',height: '289px', background:'white',border: '2px solid #F5A9A9',boxSizing: 'border-box',borderRadius: '10px'}}></img>
 
 
             </div>
@@ -54,8 +75,18 @@ const categoryproducts =()=>
 
     <AddButton />
     <AddButton /> */}
-    <AddtoBag />
-    <AddtoBag /><AddtoBag /><AddtoBag />
+    <AddtoBag onClick={()=>{
+                submitCartHandler(Product[0])
+              }}/>
+    <AddtoBag onClick={()=>{
+                submitCartHandler(Product[1])
+              }}/>
+              <AddtoBag onClick={()=>{
+                submitCartHandler(Product[2])
+              }}/>
+              <AddtoBag onClick={()=>{
+                submitCartHandler(Product[3])
+              }}/>
     
 
     
@@ -65,4 +96,4 @@ const categoryproducts =()=>
     )
 }
 
-export default categoryproducts;
+export default Categoryproducts;

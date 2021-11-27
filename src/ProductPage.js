@@ -1,22 +1,8 @@
 import {React, useState, useEffect} from "react";
+import {useParams} from 'react-router-dom';
 import About from "./components_productPage/About";
-import "./ProductPage1.css";
+import "./ProductPage.css";
 //import Colors from './components_productPage/Colors'
-// <<<<<<< HEAD
-// import DetailsThumb from './components_productPage/DetailsThumb';
-// import Deals from './components_productPage/Deals';
-// import bas1 from './components_productPage/bas1.jpg';
-// import bas2 from './components_productPage/bas2.jpg';
-// import bas3 from './components_productPage/bas3.jpg';
-// import bas4 from './components_productPage/bas4.jpg';
-// import Rating from './components_productPage/Rating';
-// import AlsoBought from './components_productPage/AlsoBought';
-// import { AiOutlineHeart } from 'react-icons/ai';
-// import { BsFillBagFill } from 'react-icons/bs';
-// import { AiFillStar } from 'react-icons/ai';
-// import Slider from './components_productPage/Slider';
-// import { useState } from 'react';
-// =======
 import DetailsThumb from "./components_productPage/DetailsThumb";
 import Deals from "./components_productPage/Deals";
 import bas1 from "./components_productPage/bas1.jpg";
@@ -35,7 +21,7 @@ import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import axios from "axios";
 
 function ProductPage() {
-
+  const {id}=useParams();
   const [products, setProducts] = useState([{
     _id: "1",
     title: "hello",
@@ -48,7 +34,7 @@ function ProductPage() {
     description: "Free delivery above 799/-",
     content1: "100% Original product  ",
     content2: "Easy and secured product ",
-    content3: "day free return / Exchange ",
+    content3: "10 day free return / Exchange ",
     price: 499,
     colors: ["red", "black", "crimson", "teal"],
     count: 1,
@@ -59,12 +45,17 @@ function ProductPage() {
     Featureinfo2:
       "Material : It is 100% bamboo made, eco-friendly, lightweight and easy to transport.",
     star: 5,
-    returndays:7
   }])
 
   // let myRef = React.createRef();
-
-
+  const submitCartHandler=(val)=>{
+//event.preventDefault();
+   console.log(val._id+" "+val.title);
+  }
+  console.log(products._id)
+const submitWishlistHandler=(event)=>{
+    
+  }
   let handleTab = (index) => {
     this.setState({ index: index });
     const images = this.myRef.current.children;
@@ -100,37 +91,23 @@ function ProductPage() {
         ID: "NOVADMIG0001"
       })
       .then((res) => {
-        // console.log(res.data);
         let data = res.data.data.data
-
-        //console.log(data)
         console.log(data)
-        setProducts(setStates(data))
+        // setProducts(setStates(data))
         // this.state.products[0]._id
-
+        
       })
-      .catch((e) =>{
-
-        console.log("error h bc")
-        console.log(e)});
+      .catch((e) => console.log(e));
   })
 
   return (
-
+    
       <div className="app">
         {products.map((item) => (
           <div className="details" key={item._id}>
-            <div className='detail'>
-           <div className='images'> <DetailsThumb
-                images={item.src}
-                tab={handleTab}
-                // myRef={this.myRef}
-              />
             <div className="big-img">
               <img src={item.src[0]} alt="" />
             </div>
-            </div>
-
 
             <div className="box">
               <div className="row">
@@ -143,16 +120,9 @@ function ProductPage() {
                 <span>Rs.{item.price}</span>
                 <h6>Inclusive of all taxes</h6>
               </div>
-              <button className="cart">
-                <BsFillBagFill />
-                Add to Bag
-              </button>
-              <button className="wish">
-                <AiOutlineHeart />
-                Wishlist
-              </button>
-
-
+              <div className="desc">
+                <h2>{item.description}</h2>
+              </div>
               <div className="del">
                 <h2>Delivery options</h2>
                 <input
@@ -166,9 +136,6 @@ function ProductPage() {
                   Please enter your PIN code to check if your area is servicable
                 </p>
               </div>
-              <div className='freedel'>
-                <p>Free Delivery above Rs 799/-</p>
-                </div>
               <div className="content">
                 <div className="content1">
                   <p>{item.content1}</p>
@@ -178,9 +145,8 @@ function ProductPage() {
                   <p>{item.content2}</p>
                 </div>
                 <div className="content3">
-                  <p>{item.returndays} {item.content3}</p>
+                  <p>{item.content3}</p>
                 </div>
-
               </div>
               <DetailsThumb
                 images={item.src}
@@ -188,27 +154,23 @@ function ProductPage() {
                 // myRef={this.myRef}
               />
 
-              <button className="cart">
+              <button className="cart" onClick={()=>{
+                submitCartHandler(products[0])
+              }}>
                 <BsFillBagFill />
                 Add to Bag
               </button>
-              <button className="wish">
+              <button className="wish" onClick={submitWishlistHandler} >
                 <AiOutlineHeart />
                 Wishlist
               </button>
 
-              {/* <div className="desc">
-                <h2>{item.description}</h2>
-              </div> */}
-
-
-
               <div className="offers">
-                <h2>OFFERS</h2>
+                <h2>Offers</h2>
                 <p>{item.offers}</p>
               </div>
               <div className="features">
-                <h2>FEATURES</h2>
+                <h2>Features</h2>
                 <div className="featureinfo">
                   <ul>
                     {products[0].Features.map((feature) => {
@@ -218,18 +180,17 @@ function ProductPage() {
                 </div>
               </div>
             </div>
-            </div>
             <About> </About>
-      <Deals />
-      <Rating />
-      <AlsoBought />
-      <Slider />
+            <Deals />
+            <Rating />
+            <AlsoBought />
+            <Slider />
           </div>
         ))}
       </div>
-
-
+    
   );
 }
 
 export default ProductPage;
+

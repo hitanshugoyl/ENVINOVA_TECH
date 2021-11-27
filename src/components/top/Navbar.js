@@ -1,4 +1,4 @@
-import React from 'react';
+import React,{useContext} from 'react';
 import { useHistory } from "react-router-dom";
 import { makeStyles } from '@material-ui/core/styles';
 import AppBar from '@material-ui/core/AppBar';
@@ -13,11 +13,9 @@ import LocalMallIcon from '@material-ui/icons/LocalMall';
 import ForumIcon from '@material-ui/icons/Forum';
 import AccountCircleIcon from '@material-ui/icons/AccountCircle';
 import Header from '../../Logo';
+import CartContext from '../../store/cart-context';
 
 import NavLinks from './NavLinks';
-
-// import SearchBar from 'material-ui-search-bar';
-// import SearchBar from 'material-ui-search-bar';
 
 const useStyles = makeStyles((theme) => ({
 container:{
@@ -52,7 +50,10 @@ container:{
 
 
 export default function Navbar() {
-
+const cartCtx=useContext(CartContext);
+const numberOfCartItems = cartCtx.items.reduce((curNumber, item) => {
+  return curNumber + item.amount;
+}, 0);
   const history = useHistory();
 
   const goToSupport=()=>{
@@ -107,7 +108,7 @@ export default function Navbar() {
           // aria-controls="primary-search-account-menu"
           aria-haspopup="true"
           color="inherit"
-          
+          href="/support"
           
         >
           <ForumIcon />
@@ -120,6 +121,7 @@ export default function Navbar() {
           aria-controls="primary-search-account-menu"
            aria-haspopup="true"
           color="inherit"
+          href="/profile"
         >
           <AccountCircleIcon />
         </IconButton>
@@ -127,7 +129,7 @@ export default function Navbar() {
       </MenuItem>
       <MenuItem>
      
-     <IconButton aria-label="show 4 items" color="inherit">
+     <IconButton aria-label="show 4 items" color="inherit" href="/wishlist">
         {/* <Badge badgeContent={7} color="secondary">  */}
         < FavoriteBorderIcon />
       {/*  </Badge>  */}
@@ -135,10 +137,10 @@ export default function Navbar() {
      <p>Wishlist</p>
    </MenuItem>
       <MenuItem>
-        <IconButton aria-label="show 11 items in bag" color="inherit">
-         {/*  <Badge badgeContent={11} color="secondary"> */}
+        <IconButton aria-label="show 11 items in bag" color="inherit" href="/bag">
+           <Badge badgeContent={numberOfCartItems} color="secondary"> 
           <LocalMallIcon />
-         {/*  </Badge> */}
+          </Badge> 
         </IconButton>
         <p>My Bag</p>
       </MenuItem>
@@ -175,17 +177,18 @@ export default function Navbar() {
               aria-haspopup="true"
               onClick={handleProfileMenuOpen}
               color="inherit"
+              href="/profile"
             >
               <AccountCircleIcon />
               
             </IconButton>
-            <IconButton aria-label="show 4 items" color="inherit">
+            <IconButton aria-label="show 4 items" color="inherit" href="/wishlist">
             {/*   <Badge badgeContent={17} color="secondary"> */}
                 <FavoriteBorderIcon />
             {/*   </Badge> */}
             </IconButton>
             
-            <IconButton aria-label="show 11 items in bag" color="inherit">
+            <IconButton aria-label="show 11 items in bag" color="inherit" href="/bag">
               {/* <Badge badgeContent={4} color="secondary"> */}
                 < LocalMallIcon/>
             {/*   </Badge> */}
