@@ -26,7 +26,7 @@ const Rewards=()=>{
 
 return(
 <React.Fragment>
-
+<Navbar/>
 <img src={envinovaLogo} className={classes.img1}/>
 
 

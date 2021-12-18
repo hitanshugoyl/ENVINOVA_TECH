@@ -24,6 +24,8 @@ import Decor from './components/Bags/Decor';
 import Essentials from './components/Bags/Essentials';
 import Kitchen from './components/Bags/Kitchen';
 import Stationary from './components/Bags/Stationary';
+import  Accordion from './components_faq/Accordion';
+
 
 function App() {
   return (
@@ -74,6 +76,12 @@ function App() {
           </Route>
           <Route path="/stationary" exact>
            <Stationary /> 
+          </Route>
+           {/* <Route path="/blogs" exact>
+           <BlogApp /> 
+          </Route>  */}
+          <Route path="/faq" exact>
+           <Accordion /> 
           </Route>
           <Route path="/productpage/:id" exact>
            <ProductPage /> 

@@ -1,0 +1,97 @@
+.Blog h1{
+    position: absolute;
+width: 689px;
+height: 89px;
+left: 321px;
+top: 855px;
+
+font-family: Ibarra Real Nova;
+font-style: normal;
+font-weight: bold;
+font-size: 96px;
+line-height: 120px;
+text-align: center;
+
+color: #F5A9A9;
+}
+.Blog .c1{
+    position: absolute;
+width: 1287px;
+height: 128px;
+left: 39px;
+top: 569px;
+
+font-family: Ibarra Real Nova;
+font-style: normal;
+font-weight: normal;
+font-size: 36px;
+line-height: 45px;
+text-align: center;
+
+color: #000000;
+}
+.Blog .c2{
+    position: absolute;
+width: 1287px;
+height: 282px;
+left: 39px;
+top: 1792px;
+
+font-family: Ibarra Real Nova;
+font-style: normal;
+font-weight: bold;
+font-size: 48px;
+line-height: 60px;
+text-align: center;
+
+color: #000000;
+}
+.Blog .c3{
+    position: relative;
+    width: 1287px;
+    height: 282px;
+    left: 39px;
+    top: 1792px;
+    
+    font-family: Ibarra Real Nova;
+    font-style: normal;
+    /* font-weight: bold; */
+    font-size: 48px;
+    line-height: 60px;
+    text-align: center;
+    
+    color: #000000;
+}
+.Blog .c4{
+    position: absolute;
+width: 1287px;
+height: 270px;
+left: 22px;
+top: 2378px;
+
+font-family: Ibarra Real Nova;
+font-style: normal;
+font-weight: normal;
+font-size: 36px;
+line-height: 45px;
+text-align: center;
+
+color: #000000;
+}
+.Blog .c5{
+    position: absolute;
+width: 1287px;
+height: 120px;
+left: 22px;
+top: 2852px;
+
+font-family: Ibarra Real Nova;
+font-style: normal;
+font-weight: normal;
+font-size: 48px;
+line-height: 60px;
+text-align: center;
+
+color: #35723A;
+
+}

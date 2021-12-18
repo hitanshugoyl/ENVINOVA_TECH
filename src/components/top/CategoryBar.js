@@ -73,7 +73,7 @@ export default function CategoryBar() {
       <Tabs
         value={value}
         onChange={handleChange}
-        onClick={handleClick}
+        onMouseEnter={handleClick}
         indicatorColor="primary"
         textColor="secondary"
         variant="fullWidth"
@@ -91,9 +91,9 @@ export default function CategoryBar() {
        id={id}
        open={open}
        anchorEl={anchorEl}
-       onClose={handleClose}
+       onMouseOut={handleClose}
        anchorReference="anchorPosition"
-       anchorPosition={{ top: 750, left: 280 }}
+       anchorPosition={{ top: 680, left: 290 }}
        anchorOrigin={{
          vertical: 'bottom',
          horizontal: 'left',

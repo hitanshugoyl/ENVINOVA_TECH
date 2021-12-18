@@ -1,0 +1,60 @@
+.RecentPosts .pic1{
+    position: absolute;
+width: 310px;
+height: 199px;
+left: 76px;
+top: 1070px;
+
+background: #9FC8A8;
+border-radius: 20px;
+}
+.RecentPosts .pic2{
+    position: absolute;
+    width: 311px;
+    height: 199px;
+    left: 510px;
+    top: 1070px;
+    
+    background: #9FC8A8;
+    border-radius: 20px;
+}
+.RecentPosts .pic3{
+    position: absolute;
+width: 310px;
+height: 199px;
+left: 944px;
+top: 1070px;
+
+background: #9FC8A8;
+border-radius: 20px;
+}
+.RecentPosts .pic4{
+    position: absolute;
+width: 310px;
+height: 199px;
+left: 76px;
+top: 1354px;
+
+background: #9FC8A8;
+border-radius: 20px;
+}
+.RecentPosts .pic5{
+    position: absolute;
+width: 311px;
+height: 199px;
+left: 510px;
+top: 1354px;
+
+background: #9FC8A8;
+border-radius: 20px;
+}
+.RecentPosts .pic6{
+    position: absolute;
+width: 310px;
+height: 199px;
+left: 944px;
+top: 1354px;
+
+background: #9FC8A8;
+border-radius: 20px;
+}

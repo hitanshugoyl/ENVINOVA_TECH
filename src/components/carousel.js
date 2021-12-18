@@ -3,7 +3,7 @@ import React from 'react';
 
 const Gallery = () => {
     return (
-      <Carousel cols={5} rows={1} gap={10}  loop>
+      <Carousel cols={4} rows={1} gap={20}  loop>
         <Carousel.Item>
           <img width="85%" src="https://picsum.photos/800/600?random=1" />
           <h2 >Product Title</h2>

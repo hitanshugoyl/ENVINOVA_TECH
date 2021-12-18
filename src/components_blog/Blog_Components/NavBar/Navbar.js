@@ -1,6 +1,5 @@
-import React,{useContext} from 'react';
-import { useHistory } from "react-router-dom";
-import { makeStyles } from '@material-ui/core/styles';
+import React from 'react';
+import { alpha, makeStyles } from '@material-ui/core/styles';
 import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
 import IconButton from '@material-ui/core/IconButton';
@@ -12,9 +11,8 @@ import FavoriteBorderIcon from '@material-ui/icons/FavoriteBorder';
 import LocalMallIcon from '@material-ui/icons/LocalMall';
 import ForumIcon from '@material-ui/icons/Forum';
 import AccountCircleIcon from '@material-ui/icons/AccountCircle';
-import Header from '../../Logo';
-import CartContext from '../../store/cart-context';
-
+import Header from './Logo';
+import SearchBar from './SearchBar';
 import NavLinks from './NavLinks';
 
 const useStyles = makeStyles((theme) => ({
@@ -22,8 +20,7 @@ container:{
   width: '800px',
     display: 'flex',
     alignItems: 'center',
-    justifyContent: 'center',
-    marginLeft:"5px"
+    justifyContent: 'center'
 },
   grow: {
     flexGrow: 2,
@@ -49,16 +46,7 @@ container:{
 
 
 
-export default function Navbar() {
-const cartCtx=useContext(CartContext);
-const numberOfCartItems = cartCtx.items.reduce((curNumber, item) => {
-  return curNumber + item.amount;
-}, 0);
-  const history = useHistory();
-
-  const goToSupport=()=>{
-    history.push("/support");
-  }
+ function Navbar() {
   const classes = useStyles();
   const [anchorEl, setAnchorEl] = React.useState(null);
   const [mobileMoreAnchorEl, setMobileMoreAnchorEl] = React.useState(null);
@@ -108,8 +96,6 @@ const numberOfCartItems = cartCtx.items.reduce((curNumber, item) => {
           // aria-controls="primary-search-account-menu"
           aria-haspopup="true"
           color="inherit"
-          href="/support"
-          
         >
           <ForumIcon />
         </IconButton>
@@ -121,7 +107,6 @@ const numberOfCartItems = cartCtx.items.reduce((curNumber, item) => {
           aria-controls="primary-search-account-menu"
            aria-haspopup="true"
           color="inherit"
-          href="/profile"
         >
           <AccountCircleIcon />
         </IconButton>
@@ -129,18 +114,18 @@ const numberOfCartItems = cartCtx.items.reduce((curNumber, item) => {
       </MenuItem>
       <MenuItem>
      
-     <IconButton aria-label="show 4 items" color="inherit" href="/wishlist">
-        {/* <Badge badgeContent={7} color="secondary">  */}
+     <IconButton aria-label="show 4 items" color="inherit">
+        <Badge badgeContent={7} color="secondary"> 
         < FavoriteBorderIcon />
-      {/*  </Badge>  */}
+       </Badge> 
      </IconButton>
      <p>Wishlist</p>
    </MenuItem>
       <MenuItem>
-        <IconButton aria-label="show 11 items in bag" color="inherit" href="/bag">
-           <Badge badgeContent={numberOfCartItems} color="secondary"> 
+        <IconButton aria-label="show 11 items in bag" color="inherit">
+          <Badge badgeContent={11} color="secondary">
           <LocalMallIcon />
-          </Badge> 
+          </Badge>
         </IconButton>
         <p>My Bag</p>
       </MenuItem>
@@ -150,11 +135,11 @@ const numberOfCartItems = cartCtx.items.reduce((curNumber, item) => {
   return (
     <React.Fragment>
     <div className={classes.grow} >
-      <AppBar  style={{borderTop:"10px solid green" ,borderBottom:"4px solid #9FC8A8",width:"1366px"}} position="static" color="#fff" >
+      <AppBar  style={{borderTop:"10px solid green" ,borderBottom:"4px solid #9FC8A8"}} position="static" color="#fff" >
         <Toolbar >
           < NavLinks onClick={handleClick}/>
           <div className={classes.container}>
-          <Header/>
+          <Header />
           </div>
           <IconButton
             edge="start"
@@ -166,7 +151,7 @@ const numberOfCartItems = cartCtx.items.reduce((curNumber, item) => {
           </IconButton>
           <div className={classes.grow} />
           <div className={classes.sectionDesktop}>
-          <IconButton aria-label="forum for support" color="inherit" href="/support">
+          <IconButton aria-label="forum for support" color="inherit">
                <ForumIcon />
             </IconButton>
             
@@ -177,21 +162,20 @@ const numberOfCartItems = cartCtx.items.reduce((curNumber, item) => {
               aria-haspopup="true"
               onClick={handleProfileMenuOpen}
               color="inherit"
-              href="/profile"
             >
               <AccountCircleIcon />
               
             </IconButton>
-            <IconButton aria-label="show 4 items" color="inherit" href="/wishlist">
-            {/*   <Badge badgeContent={17} color="secondary"> */}
+            <IconButton aria-label="show 4 items" color="inherit">
+              <Badge badgeContent={17} color="secondary">
                 <FavoriteBorderIcon />
-            {/*   </Badge> */}
+              </Badge>
             </IconButton>
             
-            <IconButton aria-label="show 11 items in bag" color="inherit" href="/bag">
-              {/* <Badge badgeContent={4} color="secondary"> */}
+            <IconButton aria-label="show 11 items in bag" color="inherit">
+              <Badge badgeContent={4} color="secondary">
                 < LocalMallIcon/>
-            {/*   </Badge> */}
+              </Badge>
             </IconButton>
           </div>
           <div className={classes.sectionMobile}>
@@ -210,23 +194,12 @@ const numberOfCartItems = cartCtx.items.reduce((curNumber, item) => {
      {renderMobileMenu} 
       
     </div>
-
-     {/* <SearchBar
-
-      onChange={() => console.log('onChange')}
-      placeholder="Search ..."
-      onRequestSearch={() => console.log('onRequestSearch')}
-      style={{
-        margin: '0 auto',
-        maxWidth: 565,
-        marginTop:100,
-        
-      }}
-    />
-  */}
+< SearchBar />
 
 
 </React.Fragment>
     
   );
 }
+
+export default Navbar;

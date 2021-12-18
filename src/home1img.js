@@ -7,8 +7,9 @@ import { useHistory } from "react-router-dom";
 const imgStyle={
     
      height:"auto",
-     margin: "100px 19px",
-     width:"90%",
+     marginTop: "50px",
+     marginLeft: "20px",
+     width:"97%",
 
   
   };
